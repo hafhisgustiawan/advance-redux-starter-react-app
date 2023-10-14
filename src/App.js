@@ -68,6 +68,7 @@ function App() {
   // redux guarantee dispatch never change
 
   useEffect(() => {
+    //INI NAMANYA ACTION CREATOR BY REDUX, NANTINYA AKAN RETURN FUNCTION YANG DI PARAMETERNYA NYA ADA DISPATCH, HARUSNYS DISPATCH ATAU USE DISPATCH GABISA DI GUNAKAN DILUAR COMPONENT
     dispatch(fetchCartData());
   }, [dispatch]);
 
